@@ -1,0 +1,36 @@
+package main.java;
+
+
+public class Schedule {
+	private String[] days;
+	/**
+	 * constructor - the template of what should happen when a member
+	 *  of this class is instantiated 
+	 * 	 */
+	public Schedule (int dayscount){
+		days = new String[dayscount];
+	}
+	
+	/**
+	 * 
+	 * @param day
+	 * @param entry
+	 */
+	public void setItinerary(int day, String entry) {
+		days[day]=entry;
+	}
+	
+	
+	public void printSchedule() {
+		for (int i=1; i<days.length;i++) {
+			if (days[i]!=null){
+				System.out.println("11/"+i+": "+days[i]);
+			}
+			else {
+				System.out.println("11/"+i);
+			}
+	
+		}
+	}
+	
+}

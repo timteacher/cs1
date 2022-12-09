@@ -1,0 +1,32 @@
+package chapter8;
+
+import java.util.*;
+public class ToDo {
+	private ArrayList<List<String>> items = new ArrayList<List<String>>();
+	
+	/*
+	 * Constructor
+	 *  Takes an array of goals and adds into our arraylist of items
+	 */
+	public ToDo(String[] goals,String[] times) {
+		for (int i=0; i<goals.length; i++) {
+			ArrayList<String> tmp = new ArrayList<String>();
+			tmp.add(goals[i]);
+			tmp.add(times[i]);
+			items.add(tmp);
+		}
+	}
+	public void speak() {
+		System.out.println(items);	
+	}
+	public void add(String goal, String time) {
+		ArrayList<String> tmp = new ArrayList<String>();
+		tmp.add(goal);
+		tmp.add(time);
+		items.add(tmp);
+	}
+	
+	
+	
+	
+}

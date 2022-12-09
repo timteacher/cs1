@@ -1,0 +1,16 @@
+package main.java;
+
+public class Schedule {
+	// december
+	// days
+	Schedule (){
+		
+	}
+	private String[] days = new String[30];
+	public void printSchedule() {
+		for (int i=0; i<;i++) {
+			
+		}
+	}
+	
+}

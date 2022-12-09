@@ -1,0 +1,12 @@
+package lab9;
+
+public class WalletTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "Car";
+		String x = "car";
+		System.out.println(s.compareTo(x));
+	}
+
+}

@@ -1,0 +1,39 @@
+package main.java;
+
+
+public class Schedule {
+	private String[] days;
+	private String month;
+	
+	/**
+	 * constructor - the template of what should happen when a member
+	 *  of this class is instantiated 
+	 * 	 */
+	public Schedule (int dayscount, int monthnumber){
+		days = new String[dayscount];
+		month = String.valueOf(monthnumber); 
+	}
+	
+	/**
+	 * 
+	 * @param day
+	 * @param entry
+	 */
+	public void setItinerary(int day, String entry) {
+		days[day]=entry;
+	}
+	
+	
+	public void printSchedule() {
+		for (int i=1; i<days.length;i++) {
+			if (days[i]!=null){
+				System.out.println(month+"/"+i+": "+days[i]);
+			}
+			else {
+				System.out.println(month+"/"+i);
+			}
+	
+		}
+	}
+	
+}

@@ -1,0 +1,8 @@
+package chapter8;
+
+public class WalletTester {
+	Wallet myWallet = new Wallet();
+	
+	Coin quarter = new Coin("quarter");
+	Coin dime = new Coin("dime");
+}

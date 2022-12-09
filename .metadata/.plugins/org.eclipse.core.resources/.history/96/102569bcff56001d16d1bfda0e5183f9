@@ -1,0 +1,47 @@
+package chapter7;
+
+public class Arrays {
+	public static void main(String[] args)
+	{
+		// makes a double array called x with some numbers
+		double[] x = {8,4,5,21,7,9,18,2,100};
+		
+		// prints each element in x
+		System.out.println("Before rotation: ==================");
+		for (int i=0; i<x.length; i++) {
+			System.out.println("x["+i+"]: "+x[i]);
+		}
+		
+		// rotates the x array 3 to the left
+		x = rotate(x,3);
+		
+		// prints each element in x
+		System.out.println("After rotation: ===================");
+		for (int i=0; i<x.length; i++) {
+			System.out.println("x["+i+"]: "+x[i]);
+		}
+	}
+	// declares a method called rotate which returns a double array
+	// the rotate method takes a double array (called nums) and an int (called r) as parameters.
+	public static double[] rotate(double[] nums, int r) {
+		if (r==0) {
+			return nums;
+		}
+		if (r>0) {
+			int j=0;
+			for (int i= nums.length-r-1; i<nums.length; i++) {
+				nums[i]=nums[j];
+				j++;
+			}
+			// iterate through the indices from 0 to n-r
+			for (int i =0; i<nums.length-r; i++) {
+				// sets the element in nums at i equal to the element r behind it
+				nums[i]=nums[i+r];
+			}
+		}
+		
+		return nums;
+	}
+	
+
+}

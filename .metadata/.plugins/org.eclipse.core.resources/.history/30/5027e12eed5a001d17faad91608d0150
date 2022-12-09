@@ -1,0 +1,19 @@
+package checkers;
+
+public class checkerboard {
+	public static void main(String[] args) {
+		int arr[][] = new int[8][8];
+		for (int x = 1; x<=8; x++ ) {
+			for (int y=1; y<=8; y++) {
+				if ((x+y)%2==0){
+					arr[x-1][y-1]=0;
+				}
+				else {
+					arr[x-1][y-1]=1;
+				}
+			}
+		}
+		System.out.println(arr[0][0]);
+		System.out.println(arr[0][1]);
+	}
+}

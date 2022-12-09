@@ -1,0 +1,22 @@
+package main.java;
+
+
+public class Schedule {
+	// december
+	// days
+	private String[] days;
+	public Schedule (int dayscount){
+		days = new String[dayscount];
+	}
+	public void setItnerary(int day, String entry) {
+		days[day]=entry;
+	}
+	
+	
+	public void printSchedule() {
+		for (int i=0; i<days.length;i++) {
+			System.out.println(days[i]);
+		}
+	}
+	
+}

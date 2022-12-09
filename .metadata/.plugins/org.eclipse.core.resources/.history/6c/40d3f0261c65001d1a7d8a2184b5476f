@@ -1,0 +1,11 @@
+package chapter8;
+
+public class ToDoTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String goals[] = {"Finish math homework", "Fold laundry","Feed dog"};
+		ToDo mygoals = new ToDo(goals);
+	}
+
+}

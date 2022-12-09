@@ -1,0 +1,15 @@
+package lab9;
+
+public class WalletTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		businesscard b = new businesscard("John Doe", "Golf Galaxy", "Salesperson", 3003000);
+		driversLicense dl = new driversLicense("John Doe", "1011");
+		Wallet w = new Wallet();
+		w.addCard(b);
+		w.addCard(dl);
+		
+	}
+
+}

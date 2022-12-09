@@ -1,0 +1,11 @@
+package lab9;
+
+public class WalletTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		businesscard b = new businesscard("John Doe", "Golf Galaxy", "Salesperson", 3003000);
+		
+	}
+
+}

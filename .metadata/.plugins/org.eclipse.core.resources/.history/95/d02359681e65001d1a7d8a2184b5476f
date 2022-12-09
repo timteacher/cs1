@@ -1,0 +1,13 @@
+package chapter8;
+
+public class ToDoTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String goals[] = {"Finish math homework", "Fold laundry","Feed dog"};
+		String dates[] = {"5:00","10:00","3:00"};
+		ToDo mygoals = new ToDo(goals,dates);
+		mygoals.speak();
+	}
+
+}

@@ -1,0 +1,12 @@
+package test.java;
+
+import main.java.Schedule;
+
+public class ScheduleTester {
+	public static void main(String[] args) {
+		Schedule november = new Schedule(30);
+		november.setItnerary(10, "Finish chapter 8 notes");
+		november.printSchedule();
+		
+	}
+}

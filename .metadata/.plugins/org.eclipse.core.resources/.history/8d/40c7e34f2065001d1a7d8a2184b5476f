@@ -1,0 +1,22 @@
+package chapter8;
+
+public class ToDoTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String goals[] = {"Finish math homework", "Fold laundry","Feed dog"};
+		String dates[] = {"5:00","10:00","3:00"};
+		ToDo Timsgoals = new ToDo(goals,dates);
+		Timsgoals.speak();
+		Timsgoals.add("Review arraylist syntax","3:00");
+		Timsgoals.speak();
+		Timsgoals.markcomplete("Finish math homework");
+		Timsgoals.speak();
+		String goals2[] = null;
+		String dates2[]= null;
+		ToDo Matthewsgoals = new ToDo(goals2,dates2);
+
+		
+	}
+
+}

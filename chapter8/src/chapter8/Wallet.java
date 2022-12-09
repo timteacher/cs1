@@ -1,0 +1,29 @@
+package chapter8;
+
+public class Wallet {
+	private double total;
+	
+	public Wallet() {
+		total = 0;
+	}
+	
+	/*
+	 * mutator
+	 */
+	public void add(Coin aCoin) {
+		total = total +aCoin.getValue();
+		//System.out.println("The total is now "+total);
+	}
+	
+	/*
+	 * accessor
+	 */
+	public double getTotal() {
+		return total;
+	}
+	
+	public String repr() {
+		return String.valueOf(total);
+	}
+
+}
